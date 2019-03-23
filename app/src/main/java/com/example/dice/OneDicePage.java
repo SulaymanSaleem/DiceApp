@@ -1,7 +1,5 @@
 package com.example.dice;
 
-import android.animation.AnimatorSet;
-import android.animation.ObjectAnimator;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,7 +21,6 @@ public class OneDicePage extends AppCompatActivity {
     TextView showCount;
     TextView showValue;
     int clickcount=0;
-    public long animationDuration =600;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +34,7 @@ public class OneDicePage extends AppCompatActivity {
         img6 = findViewById(R.id.result6Pic);
         roll = findViewById(R.id.rollButton);
         dice1= findViewById(R.id.OneDice1);
+
         final MediaPlayer drSound = MediaPlayer.create(this, R.raw.dicerollsound);
 
         roll.setOnClickListener(new View.OnClickListener() {

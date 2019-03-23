@@ -16,14 +16,19 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".SettingsActivity"
                 android:label="Settings"
-                android:parentActivityName=".MainActivity"></activity>
+                android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"></activity>
         <activity
+            android:screenOrientation="portrait"
             android:name=".help"
             android:label="Info"
             android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".twoDicePage" />
-        <activity android:name=".OneDicePage" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".twoDicePage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".OneDicePage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
