@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".twoDicePage">
+
+    <ImageView
+        android:id="@+id/TwoDice1"
+        android:layout_width="267dp"
+        android:layout_height="285dp"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="false"
+        android:clickable="false"
+        app:srcCompat="@drawable/dice1" />
+
+    <TextView
+        android:id="@+id/countBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TwoDice1"
+        android:layout_centerHorizontal="true"
+        android:text="Number of Rolls: 0"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/rollButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countBox"
+        android:layout_centerHorizontal="true"
+        android:text="Roll!!!" />
+
+    <ImageView
+        android:id="@+id/firstresult1Pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rollButton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="55dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/result1" />
+
+    <ImageView
+        android:id="@+id/firstresult2Pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rollButton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="55dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/result2" />
+
+    <ImageView
+        android:id="@+id/firstresult3Pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rollButton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="55dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/result3" />
+
+    <ImageView
+        android:id="@+id/firstresult4Pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rollButton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="55dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/result4" />
+
+    <ImageView
+        android:id="@+id/firstresult5Pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rollButton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="55dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/result5" />
+
+    <ImageView
+        android:id="@+id/firstresult6Pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rollButton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="55dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/result6" />
+    <ImageView
+        android:id="@+id/secondresult1Pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rollButton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="55dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/result1" />
+
+    <ImageView
+        android:id="@+id/secondresult2Pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rollButton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="55dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/result2" />
+
+    <ImageView
+        android:id="@+id/secondresult3Pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rollButton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="55dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/result3" />
+
+    <ImageView
+        android:id="@+id/secondresult4Pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rollButton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="55dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/result4" />
+
+    <ImageView
+        android:id="@+id/secondresult5Pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rollButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="55dp"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/result5" />
+
+    <ImageView
+        android:id="@+id/secondresult6Pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rollButton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="55dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/result6" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstresult1Pic"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

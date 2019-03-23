@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Dice</string>
+    <string name="settings_name">Settings</string>
+    <string name="update_name">Update</string>
+    <string name="help_name">Help</string>
+    <string-array name="DiceColour">
+        <item>Default</item>
+        <item>Red</item>
+        <item>Black</item>
+        <item>Yellow</item>
+        <item>Blue</item>
+    </string-array>
+
+    <style name="MySpinnerLook" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textSize">24dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_settings">Settings</string>
+
+</resources>
