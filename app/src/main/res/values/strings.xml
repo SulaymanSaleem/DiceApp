@@ -3,10 +3,9 @@
     <string name="settings_name">Settings</string>
     <string name="update_name">Update</string>
     <string name="help_name">Help</string>
-    <string-array name="DiceColour">
+    <string-array name="Colours">
         <item>Default</item>
         <item>Red</item>
-        <item>Black</item>
         <item>Yellow</item>
         <item>Blue</item>
     </string-array>

@@ -5,6 +5,7 @@ import android.animation.ObjectAnimator;
 import android.media.MediaPlayer;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Spinner;
 
 
 public class MyMethods {
@@ -36,6 +37,21 @@ public class MyMethods {
             img5.setVisibility(View.VISIBLE);
         } else {
             img6.setVisibility(View.VISIBLE);
+        }
+    }
+
+    public void setBackgroundColour(View view, int id){
+        if (id==1) {
+            view.setBackgroundResource(R.color.Red);
+        }
+        else if (id==2){
+            view.setBackgroundResource(R.color.Yellow);
+        }
+        else if (id==3){
+            view.setBackgroundResource(R.color.Blue);
+        }
+        else {
+            view.setBackgroundResource(R.color.White);
         }
     }
 }

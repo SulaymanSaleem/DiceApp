@@ -12,4 +12,35 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></include>
 
+    <TextView
+        android:id="@+id/backgroundLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="50sp"
+        android:textSize="19sp"
+        android:text="Background Colour:" />
+
+    <Spinner
+        android:id="@+id/backgroundColour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10sp"
+        android:layout_alignBottom="@id/backgroundLabel"
+        android:layout_toRightOf="@id/backgroundLabel"
+
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backgroundColour"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:text="Save"/>
+
 </RelativeLayout>
