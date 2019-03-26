@@ -9,12 +9,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.support.v7.widget.Toolbar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button oneDiceButton;
     private Button twoDiceButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
+        String sessionId= getIntent().getStringExtra("EXTRA_SESSION_ID");
 
         oneDiceButton = findViewById(R.id.OneDiceButton);
         oneDiceButton.setOnClickListener(new View.OnClickListener() {
@@ -37,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
                  openTwoDicePage();
              }
          });
-
     }
 
     @Override
@@ -60,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 openHelpPage();
                 break;
             default:
-                //uknnown error
+                //unknown error
         }
         return super.onOptionsItemSelected(item);
     }

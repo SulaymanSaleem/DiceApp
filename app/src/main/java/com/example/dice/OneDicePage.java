@@ -13,13 +13,7 @@ import android.widget.TextView;
 
 public class OneDicePage extends AppCompatActivity {
     public Button roll;
-    public ImageView dice1;
-    public ImageView img1;
-    public ImageView img2;
-    public ImageView img3;
-    public ImageView img4;
-    public ImageView img5;
-    public ImageView img6;
+    public ImageView dice1,img1,img2,img3,img4,img5,img6;
     TextView showCount;
     TextView showValue;
     int clickcount=0;
@@ -29,6 +23,9 @@ public class OneDicePage extends AppCompatActivity {
         MyMethods oneDiceMethods = new MyMethods();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_one_dice_page);
+        String sessionId= getIntent().getStringExtra("EXTRA_SESSION_ID");
+        showCount= findViewById(R.id.countBox);
+        showCount.setText(sessionId);
         img1 = findViewById(R.id.result1Pic);
         img2 = findViewById(R.id.result2Pic);
         img3 = findViewById(R.id.result3Pic);
