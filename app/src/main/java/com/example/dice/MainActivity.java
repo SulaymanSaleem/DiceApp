@@ -1,6 +1,8 @@
 package com.example.dice;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,22 +11,27 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.support.v7.widget.Toolbar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
+    private RelativeLayout rl;
     private Button oneDiceButton;
     private Button twoDiceButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        MyMethods mainActivityMethods = new MyMethods();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
-        String sessionId= getIntent().getStringExtra("EXTRA_SESSION_ID");
+
+        SharedPreferences prefs = getSharedPreferences("bgColour", MODE_PRIVATE);
+        String colour = prefs.getString("Colour", "WHITE");
+        rl = (RelativeLayout) findViewById(R.id.RelativeLayoutMain);
+        mainActivityMethods.setBackgroundColour(rl,colour);
 
         oneDiceButton = findViewById(R.id.OneDiceButton);
         oneDiceButton.setOnClickListener(new View.OnClickListener() {
@@ -83,4 +90,5 @@ public class MainActivity extends AppCompatActivity {
         Intent help = new Intent(this,help.class);
         startActivity(help);
     }
-    }
+
+}
